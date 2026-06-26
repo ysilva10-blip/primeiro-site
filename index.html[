@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu VS Code Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="vs-container">
+        <div class="activity-bar">
+            <div class="icon active">📄</div>
+            <div class="icon">🔍</div>
+            <div class="icon">🌿</div>
+            <div class="icon">🛠️</div>
+            <div class="icon">⚙️</div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-title">EXPLORER: PROJETO</div>
+            <ul class="file-list">
+                <li class="file">📁 src</li>
+                <li class="file active-file">📄 index.html</li>
+                <li class="file">🎨 style.css</li>
+                <li class="file">⚡ script.js</li>
+            </ul>
+        </div>
+
+        <div class="editor">
+            <div class="tabs">
+                <div class="tab active-tab">index.html</div>
+                <div class="tab">style.css</div>
+            </div>
+            <div class="code-area">
+                <pre><code><span class="keyword">const</span> <span class="variable">boasVindas</span> = <span class="string">"Olá, Dev! Bem-vindo ao VS Code Clone."</span>;
+<span class="built-in">console</span>.<span class="keyword">log</span>(<span class="variable">boasVindas</span>);
+
+<span class="comment">// Divirta-se editando este estilo!</span>
+<span class="keyword">function</span> <span class="variable">criarSite</span>() {
+    <span class="keyword">return</span> <span class="keyword">true</span>;
+}</code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
