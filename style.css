@@ -1,0 +1,126 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Layout Principal */
+.vs-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra de Ícones Lateral */
+.activity-bar {
+    background-color: #333333;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    gap: 20px;
+}
+
+.activity-bar .icon {
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.activity-bar .icon:hover, .activity-bar .icon.active {
+    opacity: 1;
+}
+
+/* Explorador de Arquivos */
+.sidebar {
+    background-color: #252526;
+    width: 240px;
+    padding: 10px;
+    border-right: 1px solid #3c3c3c;
+}
+
+.sidebar-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #bbbbbb;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.file-list {
+    list-style: none;
+}
+
+.file {
+    padding: 6px 8px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.file:hover {
+    background-color: #2a2d2e;
+}
+
+.active-file {
+    background-color: #37373d;
+    color: #ffffff;
+}
+
+/* Área do Editor de Código */
+.editor {
+    flex: 1;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Abas */
+.tabs {
+    background-color: #2d2d2d;
+    display: flex;
+    height: 35px;
+}
+
+.tab {
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: #2d2d2d;
+    color: #969696;
+    border-right: 1px solid #252526;
+    cursor: pointer;
+}
+
+.tab.active-tab {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-top: 1px solid #e0218a; /* Linha rosa simulando o tema personalizado */
+}
+
+/* Texto do Código */
+.code-area {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Cores de Sintaxe do Editor */
+.keyword { color: #569cd6; }   /* Azul para declarações */
+.variable { color: #9cdcfe; }  /* Azul claro para variáveis */
+.string { color: #ce9178; }    /* Marrom/Laranja para strings */
+.number { color: #b5cea8; }    /* Verde claro para números */
+.built-in { color: #dcdcaa; }  /* Amarelo para métodos padrão */
+.comment { color: #6a9955; }   /* Verde para documentação */
