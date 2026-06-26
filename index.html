@@ -3,49 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Fábrica Barbie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Seleção Brasileira de Futebol Feminino</title>
+    <style>
+        /* Estilos CSS Básicos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #009c3b; /* Verde do Brasil */
+            color: #ffdf00; /* Amarelo do Brasil */
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 6px solid #002776; /* Azul do Brasil */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid #009c3b;
+        }
+        h2 {
+            color: #002776;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #002776;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="vs-container">
-        <div class="activity-bar">
-            <div class="icon active">🏭</div>
-            <div class="icon">📦</div>
-            <div class="icon">📊</div>
-            <div class="icon">⚙️</div>
+    <header>
+        <h1>Seleção Brasileira Feminina</h1>
+        <p>Orgulho, Garra e Tradição Canarinha 🇧🇷⚽</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Sobre a Equipe</h2>
+            <p>A Seleção Brasileira de Futebol Feminino é uma das equipes mais respeitadas do mundo. Com um futebol alegre, habilidoso e cheio de criatividade, as Guerreiras do Brasil inspiram gerações de atletas dentro e fora do país.</p>
         </div>
 
-        <div class="sidebar">
-            <div class="sidebar-title">FÁBRICA_BARBIE_SISTEMA</div>
-            <ul class="file-list">
-                <li class="file">📁 linha_producao</li>
-                <li class="file active-file">📄 controle_estoque.js</li>
-                <li class="file">🎨 paleta_cores.json</li>
-                <li class="file">📋 relatorio_envio.md</li>
+        <div class="card">
+            <h2>Grandes Conquistas e História</h2>
+            <ul>
+                <li>Multicampeãs da Copa América Feminina.</li>
+                <li>Medalhas de prata históricas nos Jogos Olímpicos.</li>
+                <li>Berço de lendas do esporte, incluindo a Rainha Marta, maior artilheira da história das Copas do Mundo.</li>
             </ul>
         </div>
+    </main>
 
-        <div class="editor">
-            <div class="tabs">
-                <div class="tab active-tab">controle_estoque.js</div>
-                <div class="tab">paleta_cores.json</div>
-            </div>
-            <div class="code-area">
-                <pre><code><span class="keyword">const</span> <span class="variable">linhaProducao</span> = <span class="string">"Linha de Montagem Barbie Fashionista"</span>;
-<span class="keyword">let</span> <span class="variable">bonecasProduzidasHoje</span> = <span class="number">1250</span>;
-<span class="keyword">const</span> <span class="variable">statusEstoque</span> = <span class="keyword">true</span>;
-
-<span class="comment">// Função para registrar o lote de bonecas finalizadas</span>
-<span class="keyword">function</span> <span class="variable">finalizarLote</span>(<span class="variable">quantidade</span>, <span class="variable">modelo</span>) {
-    <span class="built-in">console</span>.<span class="keyword">log</span>(<span class="string">`Sucesso: ${quantidade} unidades da Barbie ${modelo} foram embaladas.`</span>);
-    <span class="keyword">return</span> <span class="variable">bonecasProduzidasHoje</span> + <span class="variable">quantidade</span>;
-}
-
-<span class="variable">finalizarLote</span>(<span class="number">350</span>, <span class="string">"Sereia Dreamtopia"</span>);</code></pre>
-            </div>
-        </div>
-    </div>
+    <footer>
+        <p>Desenvolvido com 💚 e 💛 por um fã de futebol.</p>
+    </footer>
 
 </body>
 </html>
